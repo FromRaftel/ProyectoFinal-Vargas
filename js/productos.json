@@ -1,0 +1,146 @@
+[
+  
+    {
+        "id": "promo-01",
+        "titulo": "Pizza clásica + Coca-Cola",
+        "imagen": "./img/promociones/pizza-bebida1.jpg",
+        "categoria": {
+          "nombre": "Promociones de Pizza",
+          "id": "promociones"
+        },
+        "precio": 3400
+      },
+      {
+        "id": "promo-02",
+        "titulo": "Pizza clásica + Cerveza",
+        "imagen": "./img/promociones/pizza-bebida2.jpg",
+        "categoria": {
+          "nombre": "Promociones de Pizza",
+          "id": "promociones"
+        },
+        "precio": 3600
+      },
+       
+      {
+        "id": "pizza-01",
+        "titulo": "Pizza Napolitana",
+        "imagen": "./img/pizzas/pizza-napolitana.jpg",
+        "categoria": {
+          "nombre": "Pizzas Clasicas",
+          "id": "pizzas"
+        },
+        "precio": 2700
+      },
+      {
+        "id": "pizza-02",
+        "titulo": "Pizza Siciliana",
+        "imagen": "./img/pizzas/pizza-siciliana.jpg",
+        "categoria": {
+          "nombre": "Pizzas Clasicas",
+          "id": "pizzas"
+        },
+        "precio": 2800
+      },
+      {
+        "id": "pizza-03",
+        "titulo": "Pizza New York",
+        "imagen": "./img/pizzas/pizza-newyork.jpg",
+        "categoria": {
+          "nombre": "Pizzas Clasicas",
+          "id": "pizzas"
+        },
+        "precio": 3100
+      },
+      {
+        "id": "pizza-04",
+        "titulo": "Pizza Chicago",
+        "imagen": "./img/pizzas/pizza-chicago.jpg",
+        "categoria": {
+          "nombre": "Pizzas Clasicas",
+          "id": "pizzas"
+        },
+        "precio": 3100
+      },
+      {
+        "id": "pizza-05",
+        "titulo": "Pizza Hawaiana",
+        "imagen": "./img/pizzas/pizza-hawaiana.jpg",
+        "categoria": {
+          "nombre": "Pizzas Clasicas",
+          "id": "pizzas"
+        },
+        "precio": 2900
+      },
+      {
+        "id": "pizza-06",
+        "titulo": "Pizza Mexicana",
+        "imagen": "./img/pizzas/pizza-mexicana.jpg",
+        "categoria": {
+          "nombre": "Pizzas Clasicas",
+          "id": "pizzas"
+        },
+        "precio": 2600
+      },
+      {
+        "id": "pizza-07",
+        "titulo": "Pizza Cuatro Estaciones",
+        "imagen": "./img/pizzas/pizza-cuatroestaciones.jpg",
+        "categoria": {
+          "nombre": "Pizzas Clasicas",
+          "id": "pizzas"
+        },
+        "precio": 2700
+      },
+      {
+        "id": "pizza-08",
+        "titulo": "Pizza Cuatro Quesos",
+        "imagen": "./img/pizzas/pizza-cuatroquesos.jpg",
+        "categoria": {
+          "nombre": "Pizzas Clasicas",
+          "id": "pizzas"
+        },
+        "precio": 2800
+      },
+  
+   {
+      "id": "bebida-01",
+      "titulo": "Agua mineral",
+      "imagen": "./img/bebidas/agua-mineral.jpg",
+      "categoria": {
+        "nombre": "Bebidas Frías", 
+        "id": "bebidas" 
+    },
+      "precio": 500
+    },
+    {
+      "id": "bebida-02",
+      "titulo": "Cerveza Quilmes",
+      "imagen": "./img/bebidas/cerveza-quilmes.jpg",
+      "categoria": { 
+        "nombre": "Bebidas Frías", 
+        "id": "bebidas" 
+    },
+      "precio": 1200
+    },
+    {
+      "id": "bebida-03",
+      "titulo": "Gaseosa Coca-Cola",
+      "imagen": "./img/bebidas/gaseosa-coca-cola.jpg",
+      "categoria": { 
+        "nombre": "Bebidas Frías", 
+        "id": "bebidas" 
+    },
+      "precio": 800
+    },
+       {
+      "id": "bebida-05",
+      "titulo": "Cerveza Patagonia",
+      "imagen": "./img/bebidas/cerveza-patagonia.jpg",
+      "categoria": { 
+        "nombre": "Bebidas Frías", 
+        "id": "bebidas" 
+    },
+      "precio": 1800
+    }
+
+]
