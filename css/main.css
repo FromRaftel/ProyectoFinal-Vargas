@@ -158,8 +158,6 @@ main {
   gap: 1.5rem;
 }
 
-
-
 .producto-imagen {
   max-width: 100%;
   border-radius: 1rem;
@@ -198,7 +196,7 @@ main {
   color: var(--color-blanco);
 }
 
-/** CARRITO **/
+/*Carrito*/
 
 .contenedor-carrito {
   display: flex;
@@ -296,6 +294,3 @@ main {
 .disabled {
   display: none;
 }
-
-/*** MEDIA QUERIES ***/
-
