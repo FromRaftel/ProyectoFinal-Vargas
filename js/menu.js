@@ -1,9 +1,7 @@
 // Selecciono el elemento del DOM con el ID "open-menu"
 const openMenu = document.querySelector("#open-menu");
-
 // Selecciono el elemento del DOM con el ID "close-menu"
 const closeMenu = document.querySelector("#close-menu");
-
 // Selecciono el elemento del DOM que es una etiqueta "aside"
 const aside = document.querySelector("aside");
 

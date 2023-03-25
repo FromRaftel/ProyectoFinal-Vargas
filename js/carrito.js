@@ -84,8 +84,8 @@ function eliminarDelCarrito(e) {
     position: "right",
     stopOnFocus: true,
     style: {
-      background: "#160266",
-      borderRadius: "1rem",
+      background: "#040a05",
+      borderRadius: "0.25rem",
       textTransform: "uppercase",
       fontSize: ".75rem",
     },
@@ -113,29 +113,35 @@ function eliminarDelCarrito(e) {
 
 botonVaciar.addEventListener("click", vaciarCarrito);
 function vaciarCarrito() {
-  // mensaje de confirmación
-  Swal.fire({
-    title: "¿Estás seguro de eliminar?",
-    icon: "question",
-    html: `Se van a eliminar ${productosEnCarrito.reduce(
-      (acc, producto) => acc + producto.cantidad,
-      0
-    )} productos.`,
-    showCancelButton: true,
-    focusConfirm: false,
-    confirmButtonText: "Sí",
-    cancelButtonText: "No",
-  }).then((result) => {
-    if (result.isConfirmed) {
-      productosEnCarrito.length = 0;
-      localStorage.setItem(
-        "productos-en-carrito",
-        JSON.stringify(productosEnCarrito)
-      );
-      // cargo productos del carrito vacío
-      cargarProductosCarrito();
-    }
-  });
+    Swal.fire({
+        title: '¿Estás seguro de eliminar?',
+        html: `Se van a eliminar ${productosEnCarrito.reduce(
+          (acc, producto) => acc + producto.cantidad,
+          0
+        )} productos.`,
+        icon: 'question',
+        showCancelButton: true,
+        confirmButtonText: 'Sí, eliminar todo',
+        cancelButtonText: 'No, conservar',
+        cancelButtonColor: '#d33',
+        confirmButtonColor: '#0a0d0f',
+        reverseButtons: true
+      }).then((result) => {
+        if (result.value) {
+          // Eliminar productos
+          productosEnCarrito.length = 0;
+          localStorage.setItem('productos-en-carrito', JSON.stringify(productosEnCarrito));
+          // Recargar productos del carrito vacío
+          cargarProductosCarrito();
+          // Mostrar mensaje de éxito
+          Swal.fire({
+            title: 'Eliminado',
+            text: 'El carrito ha sido vaciado con éxito',
+            icon: 'success',
+            confirmButtonColor: '#000000',
+          });
+        }
+      });
 }
 
 function actualizarTotal() {
